@@ -1,0 +1,42 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.2'
+
+    implementation 'com.google.code.gson:gson:2.8.9'
+    implementation group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1.1'
+
+    implementation 'org.apache.poi:poi:3.15.0'
+    implementation 'org.jxls:jxls-poi:2.10.0'
+
+    // https://mvnrepository.com/artifact/colt/colt
+    //implementation group: 'colt', name: 'colt', version: '1.2.0'
+    // https://mvnrepository.com/artifact/com.google.guava/guava
+   // implementation group: 'com.google.guava', name: 'guava', version: '31.0.1-jre'
+    // https://mvnrepository.com/artifact/com.aparapi/aparapi
+    //implementation group: 'com.aparapi', name: 'aparapi', version: '1.9.0'
+    // https://mvnrepository.com/artifact/org.ejml/ejml-core
+    //implementation group: 'org.ejml', name: 'ejml-core', version: '0.41'
+
+    // https://mvnrepository.com/artifact/org.nd4j/nd4j-api
+    implementation group: 'org.nd4j', name: 'nd4j-api', version: '1.0.0-M1.1'
+
+
+
+
+
+}
+
+test {
+    useJUnitPlatform()
+}
